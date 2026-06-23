@@ -169,7 +169,7 @@ jobs:
         run: |
           sleep 1m
       - name: "Release-drafter"
-        uses: borislavr/release-drafter@master
+        uses: netcracker/release-drafter@master
         with:
           config-name: release-drafter-config.yml
           publish: true
