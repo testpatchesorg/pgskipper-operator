@@ -167,7 +167,7 @@ jobs:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
       - name: Wait for release
         run: |
-          sleep 1m
+          sleep 10s
       - name: "Release-drafter"
         uses: netcracker/release-drafter@master
         with:
