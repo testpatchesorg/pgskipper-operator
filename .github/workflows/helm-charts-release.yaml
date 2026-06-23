@@ -165,7 +165,9 @@ jobs:
           skip_upload: true
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-
+      - name: Wait for release
+        run: |
+          sleep 1m
       - name: "Release-drafter"
         uses: borislavr/release-drafter@master
         with:
